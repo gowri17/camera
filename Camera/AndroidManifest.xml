@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lab.camera"
+    android:versionCode="1"
+    android:versionName="1.0.0" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:targetSdkVersion="17"  
+        android:minSdkVersion="8" />
+    
+    <!-- Permissao para acessar a area de memoria externa -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <!-- Permissao para acessar a camera diretamente -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:allowBackup="true">
+        
+        <activity
+            android:name=".CameraOne"
+            android:label="@string/app_name_one"
+            android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".CameraTwo"
+            android:label="@string/app_name_two" 
+            android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

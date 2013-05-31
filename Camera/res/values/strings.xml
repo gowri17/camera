@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Camera</string>
+    <string name="app_name_one">Camera One</string>
+    <string name="app_name_two">Camera Two</string>
+    <string name="app_click">Click</string>
+</resources>
